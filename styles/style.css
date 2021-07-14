@@ -2,6 +2,7 @@
 
 html, body {
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 main {
@@ -11,6 +12,9 @@ main {
     flex-direction: column;
 }
 
+.bar{
+    visibility: hidden;
+}
 /* header section  */
 
 header {
@@ -21,7 +25,7 @@ header {
 
 nav {
     padding-top: 42px;
-    margin: 0px 156px 49px 124px;
+    margin: 0px 100px 49px 100px;
     display: flex;
     justify-content: space-between;
 }
@@ -54,14 +58,15 @@ nav ul li a {
 /* top banner   */
 
 .top-banner {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* display: flex; */
-    margin: 0px 156px 0px 156px;
+    display: flex;
+align-items: center;
+margin: 0px 100px 49px 100px;
     padding-bottom: 86px;
 }
 
-.banner-title {}
+.banner-title {
+    width: 50%;
+}
 
 .banner-title h1 {
     font-size: 64px;
@@ -76,13 +81,16 @@ nav ul li a {
     font-weight: 500;
     background: #E02C6D;
     padding: 10px 24px;
-    margin-top: -px;
+    
 }
 
-.top-banner img {
-    width: 70%;
+.banner-image {
+    width: 50%;
 }
 
+.banner-image img{
+    width: 85%;
+}
 /* main section */
 
 /* players  */
@@ -171,35 +179,137 @@ nav ul li a {
     width: 100%;
 }
 
+/* video  */
 
-/* join us  */
-.join-us{
-    background: #E02C6D;
-    height: 600px;
+.video-gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 25px;
+    grid-column-gap: 30px;
+    margin-top: 70px; 
+}
+.video-card{
+    width: 560px;
+    height: 435px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+
+.video-details h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #18191F;
+}
+
+.video-details p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C6C6C;
+}
+
+.video-image {
+    overflow: hidden;
+    height: 300px;
+}
+
+.video-image img {
     width: 100%;
-    margin-top: 100px;
 }
-.join-us h2{
-    text-align: center ;
-color: white;
-font-size: 42px;
-font-weight: 600;
+.fa-star.fill {
+    color: #FFC014;
 }
 
+.fa-star.empty {
+    color: #AEAEAE;
+}
+
+/* sign up  */
 .sign-up{
-    width:600px; 
-    background: white;
-    height: 400px;
-    margin: 0 auto;
-    margin-top: 50px;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background: rgba(0, 0, 0, 0.15);
+    width: 100%;
+    margin-top: 75px;
+}
+.signup-title {
+    text-align: center;
+    padding: 50px 0px;
 }
 
-.confirm{
-    display: flex;
-    justify-content: center;
+.signup-title h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #676767;
 }
+
+.form {
+    width: 500px;
+    margin: 0 auto;
+    align-items: center;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.form h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #E02C6D;
+    padding: 10px 0px;
+}
+
+.form-name-email {
+    margin-bottom: 25px;
+}
+
+
+.form-btn {
+    padding: 25px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.form-btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background: #E02C6D;
+    padding: 10px 24px;
+    margin-top: 24px;
+   
+}
+
+#name {
+    width: 500px;
+    height: 50px;
+    border: 1px solid #E02C6D;
+    
+    outline: none;
+}
+
+#email {
+    width: 500px;
+    height: 50px;
+    border: 1px solid #E02C6D;
+   
+    outline: none;
+}
+
+#password {
+    width: 500px;
+    height: 50px;
+    border: 1px solid #E02C6D;
+    
+    outline: none;
+}
+
+#re-password {
+    width: 500px;
+    height: 50px;
+    border: 1px solid #E02C6D;
+    
+    outline: none;
+}
+
 
 /* footer  */
 
@@ -235,16 +345,20 @@ footer {
         width: 100%;
         
     }
+    
+    .bar{
+        visibility: visible;
+    }
+    .bar a i{ 
+        color: white;
+        font-size: 24px;
+    }
     nav {
-        padding-top: 32px;
-        margin: 0px 0px 0px 0px;
-        display: flex;
-        justify-content: space-between;
+        margin: 0px 25px 0px 25px;
     }
     
     nav ul li {
-        display: inline-block;
-        padding-right: 36px;
+        display: none;
     }
     
     nav ul li a {
@@ -269,16 +383,17 @@ footer {
     .top-banner {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-    
-        margin: 0px 0px 0px 0px;
-        padding-bottom: 86px;
+        margin: 0px 50px;
+       
+    }
+    .banner-title{
+        padding-bottom: 70px;
     }
     .banner-title h1 {
-        font-size: 32px;
-        font-weight: 700;
-        color: white;
+        font-size: 56px;
+
     }
-    .top-banner img {
+    .banner-image {
         width: 90%;
     }
     /* main section */
@@ -291,6 +406,21 @@ footer {
 }
 
 
+.highlights {
+    display: block;
+    width: 100%;
+}
+/* footer  */
+
+footer {
+    width: 100%;
+    
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
 
 
 
