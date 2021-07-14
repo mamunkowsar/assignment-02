@@ -1,0 +1,168 @@
+/* common style  */
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* header section  */
+
+header {
+    background: #2D25A0;
+}
+
+/* navigation  */
+
+nav {
+    padding-top: 42px;
+    margin: 0px 156px 49px 124px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-right: 36px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.login a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background: #E02C6D;
+    padding: 10px 24px;
+}
+
+/* top banner   */
+
+.top-banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* display: flex; */
+    margin: 0px 156px 0px 156px;
+    padding-bottom: 86px;
+}
+
+.banner-title {}
+
+.banner-title h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+}
+
+.top-banner a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background: #E02C6D;
+    padding: 10px 24px;
+    margin-top: -px;
+}
+
+.top-banner img {
+    width: 70%;
+}
+
+/* main section */
+
+/* players  */
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+    margin-top: 70px;
+}
+
+.player {
+    width: 330px;
+    height: 474px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    
+}
+
+.player-details h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #18191F;
+}
+
+.player-details p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C6C6C;
+}
+
+.player-image{
+    overflow: hidden;
+    height: 256px;
+}
+.player-image img {
+    width: 100%;
+}
+
+.player-image:hover  img{
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+/* highlight */
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin-top: 165px;
+    width: 1140px;
+}
+
+.highlight-details {}
+
+.highlight-details h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0A0826;
+}
+
+.highlight-details p {
+    width: 404px;
+    height: 113px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+}
+
+.highlight-details a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background: #E02C6D;
+    padding: 10px 24px;
+    margin-top: 24px;
+}
+
+.highlights img {
+    width: 100%;
+}
