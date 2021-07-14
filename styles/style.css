@@ -12,9 +12,10 @@ main {
     flex-direction: column;
 }
 
-.bar{
+.bar {
     visibility: hidden;
 }
+
 /* header section  */
 
 header {
@@ -42,11 +43,9 @@ nav ul li a {
     font-weight: 500;
 }
 
-.login{
-    
-   
-}
-.login a{
+.login {}
+
+.login a {
     text-decoration: none;
     color: white;
     font-size: 16px;
@@ -59,8 +58,8 @@ nav ul li a {
 
 .top-banner {
     display: flex;
-align-items: center;
-margin: 0px 100px 49px 100px;
+    align-items: center;
+    margin: 0px 100px 49px 100px;
     padding-bottom: 86px;
 }
 
@@ -81,16 +80,35 @@ margin: 0px 100px 49px 100px;
     font-weight: 500;
     background: #E02C6D;
     padding: 10px 24px;
-    
 }
 
 .banner-image {
     width: 50%;
 }
 
-.banner-image img{
+.banner-image img {
     width: 85%;
+    position: relative;
+    animation: sliding 2s ease-in-out .5s infinite alternate;
+    animation-play-state: running;
 }
+
+/* banner image animaton  */
+
+@keyframes sliding {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.banner-image img {}
+
 /* main section */
 
 /* players  */
@@ -181,14 +199,15 @@ margin: 0px 100px 49px 100px;
 
 /* video  */
 
-.video-gallery{
+.video-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 25px;
     grid-column-gap: 30px;
-    margin-top: 70px; 
+    margin-top: 70px;
 }
-.video-card{
+
+.video-card {
     width: 560px;
     height: 435px;
     background: #FFFFFF;
@@ -216,6 +235,7 @@ margin: 0px 100px 49px 100px;
 .video-image img {
     width: 100%;
 }
+
 .fa-star.fill {
     color: #FFC014;
 }
@@ -225,11 +245,13 @@ margin: 0px 100px 49px 100px;
 }
 
 /* sign up  */
-.sign-up{
+
+.sign-up {
     background: rgba(0, 0, 0, 0.15);
     width: 100%;
     margin-top: 75px;
 }
+
 .signup-title {
     text-align: center;
     padding: 50px 0px;
@@ -260,7 +282,6 @@ margin: 0px 100px 49px 100px;
     margin-bottom: 25px;
 }
 
-
 .form-btn {
     padding: 25px;
     text-align: center;
@@ -275,14 +296,12 @@ margin: 0px 100px 49px 100px;
     background: #E02C6D;
     padding: 10px 24px;
     margin-top: 24px;
-   
 }
 
 #name {
     width: 500px;
     height: 50px;
     border: 1px solid #E02C6D;
-    
     outline: none;
 }
 
@@ -290,7 +309,6 @@ margin: 0px 100px 49px 100px;
     width: 500px;
     height: 50px;
     border: 1px solid #E02C6D;
-   
     outline: none;
 }
 
@@ -298,7 +316,6 @@ margin: 0px 100px 49px 100px;
     width: 500px;
     height: 50px;
     border: 1px solid #E02C6D;
-    
     outline: none;
 }
 
@@ -306,10 +323,8 @@ margin: 0px 100px 49px 100px;
     width: 500px;
     height: 50px;
     border: 1px solid #E02C6D;
-    
     outline: none;
 }
-
 
 /* footer  */
 
@@ -343,85 +358,165 @@ footer {
 @media only screen and (max-width:688px) {
     header {
         width: 100%;
-        
     }
-    
-    .bar{
+    .bar {
         visibility: visible;
     }
-    .bar a i{ 
+    .bar a i {
         color: white;
         font-size: 24px;
     }
     nav {
         margin: 0px 25px 0px 25px;
     }
-    
     nav ul li {
         display: none;
     }
-    
     nav ul li a {
         text-decoration: none;
         color: white;
         font-size: 16px;
         font-weight: 500;
     }
-    
-    .login{
-        
+    .login {
         background: #E02C6D;
         padding: 10px 24px;
     }
-    .login a{
+    .login a {
         text-decoration: none;
         color: white;
         font-size: 16px;
         font-weight: 500;
     }
-
     .top-banner {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin: 0px 50px;
-       
     }
-    .banner-title{
+    .banner-title {
         padding-bottom: 70px;
+        width: 100%;
     }
     .banner-title h1 {
-        font-size: 56px;
-
+        font-size: 3.5rem;
     }
     .banner-image {
         width: 90%;
     }
     /* main section */
-
-/* players  */
-
-.players {
-   
-   grid-template-columns: repeat(1,1fr);
+    /* players  */
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player {
+        width: 100%;
+        height: 550px;
+        margin-top: 30px;
+    }
+    .player-image {
+        overflow: hidden;
+        height: 340px;
+    }
+    /* highlights */
+    .highlights {
+        display: block;
+        width: 100%;
+    }
+    .highlight-details {
+        margin-left: 50px;
+    }
+    .highlight-banner {
+        text-align: center;
+        margin-top: 25px;
+        width: 80% !important;
+    }
+    /* video */
+    .video-gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* footer  */
+    footer {
+        width: 100%;
+    }
+    .logo img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
+/* tab  */
 
-.highlights {
-    display: block;
-    width: 100%;
-}
-/* footer  */
-
-footer {
-    width: 100%;
-    
-}
-
-.logo img {
-    width: 100%;
-    height: 100%;
-}
-
-
-
+@media only screen and (min-width:689px) and (max-width:992px) {
+    header {
+        width: 100%;
+    }
+    .bar {
+        visibility: visible;
+    }
+    .bar a i {
+        color: white;
+        font-size: 24px;
+    }
+    nav {
+        margin: 0px 25px 0px 25px;
+    }
+    nav ul li {
+        display: none;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .login {
+        background: #E02C6D;
+        padding: 10px 24px;
+    }
+    .login a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .top-banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px 50px;
+    }
+    .banner-title {
+        padding-bottom: 70px;
+        width: 100%;
+    }
+    .banner-title h1 {
+        font-size: 56px;
+    }
+    .banner-image {
+        width: 100%;
+    }
+    /* players  */
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player {
+        width: 330px;
+        height: 550px ;
+        margin-top: 30px;
+    }
+    .player-image {
+        overflow: hidden;
+        height: 340px;
+    }
+    /* highlights */
+    .highlights {
+        display: block;
+        width: 100%;
+    }
+    .highlight-details {
+        margin-left: 50px;
+    }
+    .highlight-banner {
+        text-align: center;
+        margin-top: 30px;
+    }
 }
