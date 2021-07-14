@@ -38,7 +38,11 @@ nav ul li a {
     font-weight: 500;
 }
 
-.login a {
+.login{
+    
+   
+}
+.login a{
     text-decoration: none;
     color: white;
     font-size: 16px;
@@ -97,7 +101,6 @@ nav ul li a {
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding: 15px;
-    
 }
 
 .player-details h3 {
@@ -112,15 +115,16 @@ nav ul li a {
     color: #6C6C6C;
 }
 
-.player-image{
+.player-image {
     overflow: hidden;
     height: 256px;
 }
+
 .player-image img {
     width: 100%;
 }
 
-.player-image:hover  img{
+.player-image:hover img {
     transform: scale(1.2);
     transition: transform 1s;
 }
@@ -165,4 +169,129 @@ nav ul li a {
 
 .highlights img {
     width: 100%;
+}
+
+
+/* join us  */
+.join-us{
+    background: #E02C6D;
+    height: 600px;
+    width: 100%;
+    margin-top: 100px;
+}
+.join-us h2{
+    text-align: center ;
+color: white;
+font-size: 42px;
+font-weight: 600;
+}
+
+.sign-up{
+    width:600px; 
+    background: white;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.confirm{
+    display: flex;
+    justify-content: center;
+}
+
+/* footer  */
+
+footer {
+    width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.logo img {
+    width: 483.87px;
+    height: 110px
+}
+
+.social-icon a {
+    /* background-color: rgba(42, 1, 1, 0.103); */
+    padding: 7.5px;
+    height: 32px;
+    width: 32px;
+    /* border-radius: 100px; */
+    margin: 07px;
+}
+
+.social-icon i {
+    color: #969BAB;
+}
+
+/* responsive media queries  */
+
+@media only screen and (max-width:688px) {
+    header {
+        width: 100%;
+        
+    }
+    nav {
+        padding-top: 32px;
+        margin: 0px 0px 0px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        padding-right: 36px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    .login{
+        
+        background: #E02C6D;
+        padding: 10px 24px;
+    }
+    .login a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .top-banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    
+        margin: 0px 0px 0px 0px;
+        padding-bottom: 86px;
+    }
+    .banner-title h1 {
+        font-size: 32px;
+        font-weight: 700;
+        color: white;
+    }
+    .top-banner img {
+        width: 90%;
+    }
+    /* main section */
+
+/* players  */
+
+.players {
+   
+   grid-template-columns: repeat(1,1fr);
+}
+
+
+
+
+
 }
